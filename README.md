@@ -6,13 +6,13 @@
 ## 📖 Overview  
 This project predicts the selling price of used cars based on various features using linear regression. I built two models: one from scratch, and one using Scikit-learn to compare performance.  
 Features considered include:  
-🌸 Present Price  
-🌸 Driven Kilometers  
-🌸 Fuel Type (Petrol, Diesel, Others)  
-🌸 Transmission Type (Manual/Automatic)  
-🌸 Seller Type (Dealer/Individual)  
-🌸 Number of Owners  
-🌸 Year of Manufacture  
+🚗 Present Price  
+🚗 Driven Kilometers  
+🚗 Fuel Type (Petrol, Diesel, Others)  
+🚗 Transmission Type (Manual/Automatic)  
+🚗 Seller Type (Dealer/Individual)  
+🚗 Number of Owners  
+🚗 Year of Manufacture  
 
 ## Objectives  
 🚗 Understand and explore the car pricing dataset  
