@@ -147,6 +147,19 @@ plt.grid(False)
 plt.tight_layout()
 plt.show()
 
+#removing some outliers for better accuracy
+# Calculate IQR
+Q1 = car_df["Driven_kms"].quantile(0.25)
+Q3 = car_df["Driven_kms"].quantile(0.75)
+IQR = Q3 - Q1
+upper_bound = Q3 + 1.5 * IQR
+# Show how many are being removed
+outlier_count = len(car_df[car_df["Driven_kms"] > upper_bound])
+print(f"\nRemoving {outlier_count} outlier(s) in 'Driven_kms' above {int(upper_bound)} km.\n")
+# Filter out the outliers
+car_df = car_df[car_df["Driven_kms"] <= upper_bound]
+# Re-encode after cleaning
+car_df_encoded = pd.get_dummies(car_df, columns=['Fuel_Type','Selling_type','Transmission'])
 
 #linear regression from scratch
 # Define feature matrix and target
