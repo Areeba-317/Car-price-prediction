@@ -3,7 +3,7 @@
 🚗 Dataset: [Car Data CSV](https://www.kaggle.com/datasets/vijayaadithyanvg/car-price-predictionused-cars/data)  
 🚗 Tools Used: Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn   
 
-## 📖 Overview  
+## Overview  
 This project predicts the selling price of used cars based on various features using linear regression. I built two models: one from scratch, and one using Scikit-learn to compare performance.  
 Features considered include:  
 🚗 Present Price  
